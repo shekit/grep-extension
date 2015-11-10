@@ -1,0 +1,28 @@
+{
+	"manifest_version":2,
+	"name":"Grepme",
+	"version":"0.1",
+
+	"default_locale":"en",
+	"description":"Extension to save bookmarks and search paths to projects",
+	"icons":{
+		"19":"",
+		"38":"",
+	},
+
+	"browser_action":{
+
+	},
+
+	"background":{
+		"persistent":false,
+	},
+
+	"permissions":[
+
+				  ],
+
+	"web_accessible_resources":[
+
+	],
+}
