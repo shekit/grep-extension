@@ -3,26 +3,41 @@
 	"name":"Grepme",
 	"version":"0.1",
 
-	"default_locale":"en",
-	"description":"Extension to save bookmarks and search paths to projects",
-	"icons":{
-		"19":"",
-		"38":"",
-	},
+	"description":"Extension to save bookmarks and search paths for projects"
+	// "icons":{
+	// 	"19":"",
+	// 	"38":"",
+	// },
 
-	"browser_action":{
+	// "browser_action":{
+		// "default_icon":{
+	// 	"19":"",
+	// 	"38":""
+	// },
+	// "default_title":"Grep Me",
+	// "default_popup":"popup.html"
+	// },
 
-	},
+	// "background":{
+	//  "scripts":["background.js"],
+	// 	"persistent":false,
+	// },
 
-	"background":{
-		"persistent":false,
-	},
+	// "content_scripts":[
+	// 	{
+	// 		"matches":["<all_urls>"],
+	// 		"js":["jquery.js","content.js"]
+	// 	}
+	// ]
 
-	"permissions":[
+	// "permissions":[
 
-				  ],
+	// 			  ],
 
-	"web_accessible_resources":[
+	// "web_accessible_resources":[
 
-	],
+	// ],
+
+
+
 }
