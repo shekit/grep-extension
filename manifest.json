@@ -28,11 +28,11 @@
 			"matches":["<all_urls>"],
 			"js":["jquery-2.1.4.min.js","content.js"]
 		}
+	],
+
+	"permissions":[
+		"activeTab"
 	]
-
-	// "permissions":[
-
-	// 			  ],
 
 	// "web_accessible_resources":[
 
