@@ -31,7 +31,8 @@
 	],
 
 	"permissions":[
-		"activeTab"
+		"activeTab",
+		"tabs"
 	]
 
 	// "web_accessible_resources":[

@@ -9,8 +9,35 @@ chrome.tabs.query({
 	lastFocusedWindow:true
 }, function(tabs){
 	var tab = tabs[0]
+	
+	console.log(tabs)
 	console.log(tab.url)
 })
+
+$("body").on("click","#content", function(event){
+	event.preventDefault();
+
+	chrome.tabs.query({active:true, currentWindow:true}, function(tabs){
+		var activeTab = tabs[0]
+		chrome.tabs.sendMessage(activeTab.id, {"message": "clicked_button_in_popup"})
+	})
+
+	//chrome.extension.getBackgroundPage().writeMessage();
+})
+
+chrome.runtime.onMessage.addListener(
+	function(request, sender, sendResponse){
+		if(request.message == 'open_new_tab'){
+			console.log("Content told me to")
+		}
+	}
+)
+
+// chrome.runtime.onMessage.addListener(
+// 	function(request, sender, sendResponse) {
+
+// 	}
+// )
 
 $("#searchForm").on('submit', function(event){
 	event.preventDefault();
