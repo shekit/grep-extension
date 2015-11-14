@@ -1,3 +1,3 @@
 function writeMessage(){
-	console.log("I am the background")
+	return "hello from background"
 }

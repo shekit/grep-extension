@@ -25,6 +25,12 @@ $("body").on("click","#content", function(event){
 	//chrome.extension.getBackgroundPage().writeMessage();
 })
 
+$("body").on("click", "#background", function(event){
+	event.preventDefault();
+	var bg = chrome.extension.getBackgroundPage()
+	console.log(bg.writeMessage())
+})
+
 chrome.runtime.onMessage.addListener(
 	function(request, sender, sendResponse){
 		if(request.message == 'open_new_tab'){

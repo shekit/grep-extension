@@ -23,3 +23,4 @@ chrome.runtime.onMessage.addListener(
 // chrome.runtime.sendMessage({greeting:"hello"}, function(response){
 // 	console.log("hello")
 // })
+chrome.extension.getBackgroundPage().writeMessage();
