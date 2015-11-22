@@ -33,6 +33,7 @@
 	"permissions":[
 		"activeTab",
 		"tabs"
+		//"contextMenus" - when you right click mouse
 	]
 
 	// "web_accessible_resources":[

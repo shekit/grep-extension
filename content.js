@@ -12,7 +12,7 @@
 chrome.runtime.onMessage.addListener(
 	function(request, sender, sendResponse) {
 	
-
+		//chrome.extension.getBackgroundPage().writeMessage();
 		if(request.message == "clicked_button_in_popup") {
 			console.log("popup told me to")
 		}
@@ -23,4 +23,15 @@ chrome.runtime.onMessage.addListener(
 // chrome.runtime.sendMessage({greeting:"hello"}, function(response){
 // 	console.log("hello")
 // })
-chrome.extension.getBackgroundPage().writeMessage();
+
+
+
+
+$("body").on('mouseup', function(event){
+	var selectedText = window.getSelection().toString();
+
+	if(selectedText.length > 0){
+		console.log("text selected");
+		chrome.runtime.sendMessage({"selectedText":selectedText})
+	}
+})
